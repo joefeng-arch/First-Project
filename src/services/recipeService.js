@@ -8,7 +8,7 @@
  * Set the appropriate API keys below.
  */
 
-const SPOONACULAR_API_KEY = 'YOUR_SPOONACULAR_API_KEY';
+const SPOONACULAR_API_KEY = '7773786a977441cb8ef40c78e703ad81';
 const OPENAI_API_KEY = 'YOUR_OPENAI_API_KEY';
 
 // ---------- Spoonacular ----------

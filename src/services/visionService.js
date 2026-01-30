@@ -5,7 +5,7 @@
  * Replace GOOGLE_CLOUD_VISION_API_KEY with your actual key.
  */
 
-const GOOGLE_CLOUD_VISION_API_KEY = 'YOUR_GOOGLE_CLOUD_VISION_API_KEY';
+const GOOGLE_CLOUD_VISION_API_KEY = 'AIzaSyCkQY4VnjKggzS7htGzf4mvdleQ2_yclWc';
 const VISION_API_URL = `https://vision.googleapis.com/v1/images:annotate?key=${GOOGLE_CLOUD_VISION_API_KEY}`;
 
 // Common food-related labels for filtering vision results
