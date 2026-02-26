@@ -2,6 +2,40 @@
 
 This file provides guidance for AI assistants working in this codebase.
 
+---
+
+## Global Rules for Claude Code
+
+### Operating Principles
+- 优先小改动、易 review 的 diff。除非明确要求，不做大范围重构。
+- 编辑前，先确认要改的文件，并用 3–6 条 bullet 说明计划。
+- 不凭空发明 API、配置项或文件路径；不确定时先搜索仓库。
+- 保持与现有风格和架构一致。
+
+### Safety & Secrets
+- 不得将密钥、token、私钥、.env 值或凭证粘贴进代码或日志。
+- 如果任务需要密钥，请提示我通过环境变量传入。
+- 未经要求，不添加埋点、遥测或额外网络调用。
+
+### Code Quality Bar
+- 项目有测试时，行为变更须同步添加或更新测试。
+- 优先类型安全与显式错误处理。
+- 只在意图不明显时才加注释。
+
+### Build & Run Etiquette
+- 需要执行命令时，先列出完整命令及原因，再执行。
+- 改动可能影响构建时，先跑最快的相关检查。
+
+### Output Formatting
+- **代码变更**：输出简短摘要 + 修改文件列表。
+- **调试**：输出假设、已做实验、最小化修复方案。
+
+### My Preferences
+- 简洁说明、具体步骤、可直接粘贴的命令。
+- 默认用**中文**解释。
+
+---
+
 ## Project Overview
 
 **Magic Food App** (食材魔法师, "Food Magician") is a React Native + Expo mobile application that helps users turn ingredients into recipes. Users can photograph ingredients, pick from their photo library, or type them manually — the app then detects what's in the image and suggests matching recipes.
